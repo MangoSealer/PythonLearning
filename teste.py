@@ -37,7 +37,7 @@ if idade2 >= 18:
 else:
     print("Você é menor de idade")
     # testa primeiro o if, se não rolar testa o else
-    print("teste de if, else com idade")
+print("teste de if, else com idade")
 print("-----------")
 
 
@@ -86,51 +86,66 @@ print("-----------")
 
 
 
-print("numero ?")
 for numero in range(1, 6):
     print(numero * 2)
     # |for| cria a variavel número, |in| cria o loop e |range| seta o intervalo em que essa conta vai ser feita
     # no caso, como é um loop cada vez a conta vai ser feita, assumindo um valor dentro do range e fazer a conta * 2,
     # como declarado no print, sempre excluindo o último número do range (?)
     # no caso o output vai ser 1*2, 2*2, etc, até o final do range que vai ser 5
+print("loop for, in simples")
+print("-----------")
 
 
 
 
-    contador = 0
+contador = 0
 
-    while True:
-
+while True:
         print(contador)
         contador += 1
-
         if contador == 5:
-            break
+         break
 
-# variavel declarada
+# |contador = 0| = variavel sendo declarada
 # while True: vai rodar o while *indefinidamente*
-# print como previamente visto
+# print sem ""
+# |contador += 1| vai adicionar 1 a contagem a cada print do loop
 # if contador == (= declarar == comparar) 5
-# break pra parar o while True, que seria infinito'''
+# break pra parar o while True, que seria infinito
+print("teste loop indefinido 'while True' c/ break")
+print("-----------")
 
-for i in range(10):
 
-    if i % 2 == 0:
+
+
+
+for contagem in range(10):
+
+    if contagem % 2 == 0:
         continue
-    print(i)
+    print(contagem)
 
-# Neste exemplo, o loop for itera sobre os números de 0 a 9 utilizando a função range().
-# Dentro do loop, verifica-se se o número é divisível por 2 utilizando o operador de módulo %.
-# Se o número for divisível por 2 (ou seja, se for par), a instrução continue é executada, fazendo com
-# que o restante do bloco de código seja pulado e passando para a próxima iteração do loop. Como resultado,
-# apenas os números ímpares serão impressos.
-# ^ entender e substituir
+# for contagem in range(10): seta o loop, o (10) é a mesma coisa que (0, 10)
+# if contagem % 2 == 0: usa o operador modulo (% ≠ /) pra ver se o número é par
+# % verifica qual o resto da conta do segundo operando - o primeiro, ex.
+# 5 % 2 = 1, pois, 5 - 2 - 2 = 1, ou, 4 % 2 = 0, pois 4 - 2 - 2 = 0
+# 7 % 4 = 3, pois, 7 - 4 = 3
+# |continue| linkado ao if pula essa interação, no caso desse bloco, tudo que for % 2 == 0 vai ser pulado
+# nesse caso, print(contagem) vai imprimir numeros impares de 0 até 9
+print("teste loop if, operador módulo % e continue")
+print("-----------")
+
+
 
 
 for i in range(5):
     pass
 
 # pass não faz nada (?) usado pra quando quer criar um bloco e deixar reservado pra mais tarde (?)
+print("teste pass")
+print("-----------")
+
+
 
 
 frutas = ["maçã", "banana", "laranja"]
@@ -139,43 +154,85 @@ print(frutas[0])
 # print (frutas) acessa a lista, [0] acessa o primeiro item da lista, no caso, maçã
 print(frutas[-1])
 # [-1] acessa o ultimo item da lista, [-2] acessaria o penúltimo...
+print("teste lista e indice")
+print("-----------")
 
 
-# adicionar prints antes dos printout para organizar ASAP
 
 
-# metodos de listas (ask abt methods)
-
-'''append(elemento): adiciona um elemento ao final da lista.
-insert(indice, elemento): insere um elemento em uma posição específica da lista.
-remove(elemento): remove a primeira ocorrência de um elemento na lista.
-????pop(indice): remove e retorna o elemento em uma posição específica da lista.
-sort(): ordena os elementos da lista em ordem ascendente.
-reverse(): inverte a ordem dos elementos na lista.'''
-# ^ organizar
+# Sintaxe = lista.metodo
 
 frutas = ["maçã", "banana", "laranja"]
+# primeira variavel criada
+
+
+
 
 frutas.append("pera")
-print(frutas)  # Imprime ["maçã", "banana", "laranja", "pera"]
+print(frutas)
+# |.append| adiciona um elemento ao final da lista
+print("método .append")
+print("-----------")
+
+
+
 
 frutas.insert(1, "uva")
-print(frutas)  # Imprime ["maçã", "uva", "banana", "laranja", "pera"]
+print(frutas)
+# |.insert (indice, elemento) adiciona um elemento em uma posição especifica da lista
+print("método .insert")
+print("-----------")
+
+
+
 
 frutas.remove("banana")
-print(frutas)  # Imprime ["maçã", "uva", "laranja", "pera"]
+print(frutas)
+# |.remove| remove a primeira incidência do elemento mencionado
+print("método .remove")
+print("-----------")
+
+
+
 
 fruta_removida = frutas.pop(2)
-print(frutas)  # Imprime ["maçã", "uva", "pera"]
+# |fruta_removida| tá criando uma variavel, |frutas.pop| remove um item especifico com base no indice |(2)|
+print(frutas)
+# imprimindo a lista normalmente
 print(fruta_removida)  # Imprime "laranja"
+# imprimindo a variavel que acabou de criar
+print("método .pop")
+print("-----------")
+
+
+
 
 frutas.sort()
-print(frutas)  # Imprime ["maçã", "pera", "uva"]
+print(frutas)
+# organiza a lista em ordem crescente
+print("método. sort")
+print("-----------")
+
+
+
 
 frutas.reverse()
-print(frutas)  # Imprime ["uva", "pera", "maçã"]
+print(frutas)
+# inverte a ordem atual dos itens da lista
+print("método .reverse")
+print("-----------")
 
-# ^ entender, organizar
+
+
+
+frutas.sort(reverse=True)
+print(frutas)
+# |.sort(reverse=True)| faz o mesmo que |.sort()|, mas em ordem decrescente
+print("método .sort descendente")
+print("-----------")
+
+'''PAREI AQUI'''
+
 
 
 # Listas de compreensão

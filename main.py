@@ -1,6 +1,11 @@
-for numero in range(1, 6):
-    print(numero * 2)
-    # entendi porra nenhuma kkkkkk (tentar entender depois)
+for contagem in range(10):
+
+    if contagem % 2 == 0:
+        continue
+    print(contagem)
 
 
-print("funcionou a")
+
+
+numero = 5
+print(numero % 2)
