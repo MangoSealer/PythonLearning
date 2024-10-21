@@ -1,11 +1,3 @@
-for contagem in range(10):
-
-    if contagem % 2 == 0:
-        continue
-    print(contagem)
-
-
-
-
-numero = 5
-print(numero % 2)
+numeros = [1, 2, 3, 4, 5]
+quadrados = [x ** 2 for x in numeros if x % 2 == 0]
+print(quadrados)

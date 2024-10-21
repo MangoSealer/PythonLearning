@@ -231,30 +231,31 @@ print(frutas)
 print("método .sort descendente")
 print("-----------")
 
-'''PAREI AQUI'''
 
 
 
-# Listas de compreensão
-# As listas de compreensão são uma forma concisa de criar novas listas baseadas em uma sequência existente.
-# Permitem filtrar e transformar os elementos de uma lista em uma única linha de código.
+# lista de compreensão é quando você pega uma lista normal e aplica uma condição ou transformação geralmente em uma
+# ou poucas linhas
 
-'''nova_lista = [expressão for elemento in sequência if condição]
-Exemplo:
+# Exemplo:
 
-números = [1, 2, 3, 4, 5]
-quadrados = [x ** 2 for x in números if x % 2 == 0]
-print(quadrados)  # Imprime [4, 16]
-Neste exemplo, é criada uma nova lista chamada quadrados, que contém os quadrados dos números pares da lista números.
- A expressão x ** 2 eleva cada elemento ao quadrado, e a condição if x % 2 == 0 filtra apenas os números pares.'''
+numeros = [1, 2, 3, 4, 5] # lista normal sendo criada
+quadrados = [x ** 2 for x in numeros if x % 2 == 0]
+# nessa linha tá transformando em lista de compreensão, |x ** 2| tá usando o operador exponenciador, que
+# é igual a exponenciação normal (2 ** 3 = {2 x 2 x 2 = 8}),
+# logo em seguida um loop tá sendo criado |for x (variavel sendo criada, usando a condição mencionada antes)|
+# |in numeros| ta utilizando a lista mencionada acima, |if x % 2 == 0| tá testando se o numero é par
+print(quadrados)
 
-# ^ kkkkkkkkkkk alguém me mata por favor
 
+
+
+# Tuplas
 
 ponto = (3, 4)
-# entre parênteses deixa de ser lista, que é mutavel, pra Tupla (?) que é algo imutável
+# [] cria uma lista, onde os valores são mutáveis, () cria uma Tupla, que não é mutável
 print(ponto[0])
-# [0] sempre vai ser o "operador" que vai selecionar um item de uma lista ou Tupla
+# [0] sempre vai ser o indice que vai pra um item de uma lista ou Tupla
 
 
 '''count(elemento): devolve o número de vezes que um elemento aparece na tupla. 
