@@ -1,3 +1,3 @@
-numeros = [1, 2, 3, 4, 5]
-quadrados = [x ** 2 for x in numeros if x % 2 == 0]
-print(quadrados)
+pessoa = {"nome": "João", "idade": 25, "cidade": "Osasco"}
+# {} cria um dicionario, separa as chave-valor com :, sempre utilizando " "
+print(pessoa.get("altura"))

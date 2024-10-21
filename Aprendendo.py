@@ -256,24 +256,44 @@ ponto = (3, 4)
 # [] cria uma lista, onde os valores são mutáveis, () cria uma Tupla, que não é mutável
 print(ponto[0])
 # [0] sempre vai ser o indice que vai pra um item de uma lista ou Tupla
+print("introdução a Tuplas")
+print("-----------")
 
 
-'''count(elemento): devolve o número de vezes que um elemento aparece na tupla. 
-index(elemento): devolve o índice da primeira aparição de um elemento na tupla. Opcionalmente, pode-se especificar o início e fim da busca. 
-len(tupla): embora não seja um método de tupla propriamente dito, esta função incorporada devolve o comprimento da tupla.'''
-# ^ entender, organizar, transcrever
 
-Minha_tupla = 1, 2, 3, 2, 4, 2
+
+Minha_tupla = (1, 2, 3, 2, 4, 2)
 
 print(Minha_tupla.count(2))
+# |(Tupla.count(index))| diz quantas vezes o item aparece na tupla
 print(Minha_tupla.index(2))
+# |(Tupla.index(index))| diz qual numero do index o item aparece a primeira vez na tupla
 print(Minha_tupla.__len__())
+# |(Tupla.len())| short for lenght
+print("métodos de Tuplas")
+print("-----------")
+
+
+
+# Dicionários
 
 pessoa = {"nome": "João", "idade": 25, "cidade": "Osasco"}
+# {} cria um dicionario, separa as chave-valor com :, sempre utilizando " "
 print(pessoa["nome"])
+# sintaxe basica pra dar o output, print(dicionario["chave"])
 print(pessoa["idade"])
 print(pessoa["cidade"])
-# tf is method get ()?
+
+# outra forma de dar o output de um dicionario é usar o metodo get(), usando a sintaxe basica
+# caso não exista a chave vai gerar um erro no código, caso o metodo get() não
+# encontre a chave ele vai retornar "None", mas também é possivel selecionar a mensagem de retorno
+# caso não encontre a chave, exemplos e sintaxe do metodo:
+
+print(pessoa.get("nome"))
+# print normal com valor valido
+print(pessoa.get("altura"))
+# print com valor invalido, suposto a retornar None
+print(pessoa.get("altura" , "Inválido"))
 
 
 '''Os dicionários em Python têm vários métodos incorporados para manipular e acessar os elementos. Alguns métodos comuns são:
