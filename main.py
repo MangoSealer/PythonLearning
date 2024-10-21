@@ -3,4 +3,4 @@ for numero in range(1, 6):
     # entendi porra nenhuma kkkkkk (tentar entender depois)
 
 
-print("i hope it works")
+print("funcionou")
