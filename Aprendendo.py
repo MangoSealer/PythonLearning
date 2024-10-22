@@ -1,4 +1,4 @@
-print("testando")
+print("Hello World!")
 print("-----------")
 
 
@@ -140,7 +140,6 @@ print("-----------")
 
 for i in range(5):
     pass
-
 # pass não faz nada (?) usado pra quando quer criar um bloco e deixar reservado pra mais tarde (?)
 print("teste pass")
 print("-----------")
@@ -296,38 +295,59 @@ print(pessoa.get("altura"))
 print(pessoa.get("altura" , "Inválido"))
 
 
-'''Os dicionários em Python têm vários métodos incorporados para manipular e acessar os elementos. Alguns métodos comuns são:
+# métodos de dicionários
 
-keys(): retorna os "títulos" do dicionario
+'''keys(): retorna os "títulos" do dicionario
 values(): retorna os "valores" do dicionario
 items(): retorna uma visualização de todos os pares chave-valor do dicionário.
 update(outro_dicionario): atualiza o dicionário com os pares chave-valor de outro dicionário.
 Exemplo:'''
 
 print(pessoa.keys())
+# retorna todas as 'chaves' ou 'titulos' do dicionário
+
 print(pessoa.values())
+# retorna todos os 'valores do dicionário
+
 print(pessoa.items())
+# retorna todos os pares 'chave-valor' do dicionário
+
 pessoa.update({"profissao": "Engenheiro"})
+# adiciona uma chave-valor ao dicionário
 print(pessoa)
 
+
+# Conjuntos (é igual lista ou Tupla, mas com suas peculiaridades)
+
 frutas = {"maçã", "banana", "laranja"}
+# sintaxe basica pra criar um conjunto
+
 numeros = set([1, 2, 3, 4, 5])
-'''Os conjuntos suportam operações matemáticas de conjuntos, como a união (|), a interseção (&), a diferença (-) e a diferença simétrica (^).'''
+# sintaxe para criar um conjunto utilizando a função set( )
+
+
+
 
 conjunto1 = {1, 2, 3}
 conjunto2 = {3, 4, 5}
+# conjuntos criados
 
-uniao = conjunto1 | conjunto2
-print(uniao)  # Imprime {1, 2, 3, 4, 5}
 
-intersecao = conjunto1 & conjunto2
-print(intersecao)  # Imprime {3}
+uniao = (conjunto1 | conjunto2)
+# uniao criando um novo conjunto, | vai unir os dois
+# o 3 nao vai repetir no output pq nos conjuntos valores nao podem repetir
+print(uniao)
+
+intersecao = (conjunto1 & conjunto2)
+# operador & retorna valores que os dois conjuntos tenham em comum
+print(intersecao)
 
 diferenca = conjunto1 - conjunto2
-print(diferenca)  # Imprime {1, 2}
+# faz a subtração dos itens do segundo que já estão no primeiro conjunto
+print(diferenca)
 
 diferenca_simetrica = conjunto1 ^ conjunto2
-print(diferenca_simetrica)  # Imprime {1, 2, 4, 5}
+print(diferenca_simetrica)
 # alguém me mata por favor, continuando...
 
 
