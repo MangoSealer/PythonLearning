@@ -1,3 +1,11 @@
-pessoa = {"nome": "João", "idade": 25, "cidade": "Osasco"}
-# {} cria um dicionario, separa as chave-valor com :, sempre utilizando " "
-print(pessoa.get("altura"))
+def somar_3(x):
+    return x + 3
+
+
+
+somar_3(5)
+
+
+
+
+

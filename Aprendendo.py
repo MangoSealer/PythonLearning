@@ -1,17 +1,11 @@
 print("Hello World!")
 print("-----------")
 
-
-
-
 idade1 = 25
 print(idade1)
 # no geral, não é necessário uso de ;
 print("idade")
 print("-----------")
-
-
-
 
 nome = "ugly bastard"
 print(nome)
@@ -19,17 +13,11 @@ print(nome)
 print("nome")
 print("-----------")
 
-
-
-
 if idade1 >= 18:
     print("Você é maior de idade")
     # > =
 print("if idade >=")
 print("-----------")
-
-
-
 
 idade2 = 15
 if idade2 >= 18:
@@ -39,9 +27,6 @@ else:
     # testa primeiro o if, se não rolar testa o else
 print("teste de if, else com idade")
 print("-----------")
-
-
-
 
 nota = 85
 if nota >= 90:
@@ -57,9 +42,6 @@ else:
 print("nota, if, elif e else")
 print("-----------")
 
-
-
-
 frutas = ["maçã", "banana", "laranja"]
 # variável
 for fruta in frutas:
@@ -68,9 +50,6 @@ for fruta in frutas:
     # variavel criada na primeira linha, executando cada valor da variável em uma linha
 print("teste loop for e in c/ frutas")
 print("-----------")
-
-
-
 
 contador = 0
 while contador <= 5:
@@ -83,9 +62,6 @@ while contador <= 5:
 print("teste loop while c/ contador += 1")
 print("-----------")
 
-
-
-
 for numero in range(1, 6):
     print(numero * 2)
     # |for| cria a variavel número, |in| cria o loop e |range| seta o intervalo em que essa conta vai ser feita
@@ -95,16 +71,13 @@ for numero in range(1, 6):
 print("loop for, in simples")
 print("-----------")
 
-
-
-
 contador = 0
 
 while True:
-        print(contador)
-        contador += 1
-        if contador == 5:
-         break
+    print(contador)
+    contador += 1
+    if contador == 5:
+        break
 
 # |contador = 0| = variavel sendo declarada
 # while True: vai rodar o while *indefinidamente*
@@ -114,10 +87,6 @@ while True:
 # break pra parar o while True, que seria infinito
 print("teste loop indefinido 'while True' c/ break")
 print("-----------")
-
-
-
-
 
 for contagem in range(10):
 
@@ -135,17 +104,11 @@ for contagem in range(10):
 print("teste loop if, operador módulo % e continue")
 print("-----------")
 
-
-
-
 for i in range(5):
     pass
 # pass não faz nada (?) usado pra quando quer criar um bloco e deixar reservado pra mais tarde (?)
 print("teste pass")
 print("-----------")
-
-
-
 
 frutas = ["maçã", "banana", "laranja"]
 # [ cria uma variavel tipo lista (?) podendo ser acessada posteriormente
@@ -156,15 +119,10 @@ print(frutas[-1])
 print("teste lista e indice")
 print("-----------")
 
-
-
-
 # Sintaxe = lista.metodo
 
 frutas = ["maçã", "banana", "laranja"]
 # primeira variavel criada
-
-
 
 
 frutas.append("pera")
@@ -173,26 +131,17 @@ print(frutas)
 print("método .append")
 print("-----------")
 
-
-
-
 frutas.insert(1, "uva")
 print(frutas)
 # |.insert (indice, elemento) adiciona um elemento em uma posição especifica da lista
 print("método .insert")
 print("-----------")
 
-
-
-
 frutas.remove("banana")
 print(frutas)
 # |.remove| remove a primeira incidência do elemento mencionado
 print("método .remove")
 print("-----------")
-
-
-
 
 fruta_removida = frutas.pop(2)
 # |fruta_removida| tá criando uma variavel, |frutas.pop| remove um item especifico com base no indice |(2)|
@@ -203,17 +152,11 @@ print(fruta_removida)  # Imprime "laranja"
 print("método .pop")
 print("-----------")
 
-
-
-
 frutas.sort()
 print(frutas)
 # organiza a lista em ordem crescente
 print("método. sort")
 print("-----------")
-
-
-
 
 frutas.reverse()
 print(frutas)
@@ -221,33 +164,26 @@ print(frutas)
 print("método .reverse")
 print("-----------")
 
-
-
-
 frutas.sort(reverse=True)
 print(frutas)
 # |.sort(reverse=True)| faz o mesmo que |.sort()|, mas em ordem decrescente
 print("método .sort descendente")
 print("-----------")
 
-
-
-
 # lista de compreensão é quando você pega uma lista normal e aplica uma condição ou transformação geralmente em uma
 # ou poucas linhas
 
 # Exemplo:
 
-numeros = [1, 2, 3, 4, 5] # lista normal sendo criada
+numeros = [1, 2, 3, 4, 5]  # lista normal sendo criada
 quadrados = [x ** 2 for x in numeros if x % 2 == 0]
 # nessa linha tá transformando em lista de compreensão, |x ** 2| tá usando o operador exponenciador, que
 # é igual a exponenciação normal (2 ** 3 = {2 x 2 x 2 = 8}),
 # logo em seguida um loop tá sendo criado |for x (variavel sendo criada, usando a condição mencionada antes)|
 # |in numeros| ta utilizando a lista mencionada acima, |if x % 2 == 0| tá testando se o numero é par
 print(quadrados)
-
-
-
+print("lista de compreensão")
+print("-----------")
 
 # Tuplas
 
@@ -257,9 +193,6 @@ print(ponto[0])
 # [0] sempre vai ser o indice que vai pra um item de uma lista ou Tupla
 print("introdução a Tuplas")
 print("-----------")
-
-
-
 
 Minha_tupla = (1, 2, 3, 2, 4, 2)
 
@@ -272,8 +205,6 @@ print(Minha_tupla.__len__())
 print("métodos de Tuplas")
 print("-----------")
 
-
-
 # Dicionários
 
 pessoa = {"nome": "João", "idade": 25, "cidade": "Osasco"}
@@ -282,6 +213,8 @@ print(pessoa["nome"])
 # sintaxe basica pra dar o output, print(dicionario["chave"])
 print(pessoa["idade"])
 print(pessoa["cidade"])
+print("dicionários")
+print("-----------")
 
 # outra forma de dar o output de um dicionario é usar o metodo get(), usando a sintaxe basica
 # caso não exista a chave vai gerar um erro no código, caso o metodo get() não
@@ -292,22 +225,17 @@ print(pessoa.get("nome"))
 # print normal com valor valido
 print(pessoa.get("altura"))
 # print com valor invalido, suposto a retornar None
-print(pessoa.get("altura" , "Inválido"))
-
+print(pessoa.get("altura", "Inválido"))
+print("dicionários c/ metodo get()")
+print("-----------")
 
 # métodos de dicionários
-
-'''keys(): retorna os "títulos" do dicionario
-values(): retorna os "valores" do dicionario
-items(): retorna uma visualização de todos os pares chave-valor do dicionário.
-update(outro_dicionario): atualiza o dicionário com os pares chave-valor de outro dicionário.
-Exemplo:'''
 
 print(pessoa.keys())
 # retorna todas as 'chaves' ou 'titulos' do dicionário
 
 print(pessoa.values())
-# retorna todos os 'valores do dicionário
+# retorna todos os 'valores' do dicionário
 
 print(pessoa.items())
 # retorna todos os pares 'chave-valor' do dicionário
@@ -315,7 +243,8 @@ print(pessoa.items())
 pessoa.update({"profissao": "Engenheiro"})
 # adiciona uma chave-valor ao dicionário
 print(pessoa)
-
+print("métodos de dicionários")
+print("-----------")
 
 # Conjuntos (é igual lista ou Tupla, mas com suas peculiaridades)
 
@@ -326,12 +255,10 @@ numeros = set([1, 2, 3, 4, 5])
 # sintaxe para criar um conjunto utilizando a função set( )
 
 
-
-
 conjunto1 = {1, 2, 3}
 conjunto2 = {3, 4, 5}
-# conjuntos criados
 
+# operadores de conjuntos
 
 uniao = (conjunto1 | conjunto2)
 # uniao criando um novo conjunto, | vai unir os dois
@@ -347,44 +274,33 @@ diferenca = conjunto1 - conjunto2
 print(diferenca)
 
 diferenca_simetrica = conjunto1 ^ conjunto2
+# cria um conjunto somente com as diferenças entre os conjuntos, se houver elementos presente
+# nos dois  vai ser ignorado
 print(diferenca_simetrica)
-# alguém me mata por favor, continuando...
+print("operadores de conjuntos")
+print("-----------")
 
-
-'''Métodos de conjuntos 
-conjuntos em Python têm vários métodos incorporados para manipular e acessar os elementos 
-Alguns métodos comuns são:
-
-add(elemento): adiciona um elemento ao conjunto.
-remove(elemento): remove um elemento do conjunto
-Se o elemento não existir, gera um erro.
-discard(elemento): remove um elemento do conjunto se estiver presente.Se o elemento não existir, não faz nada.
-clear(): remove todos os elementos do conjunto.
-Exemplo:'''
+# métodos de conjuntos
 
 frutas = {"maçã", "banana", "laranja"}
+# conjunto setado
 
 frutas.add("pera")
-print(frutas)  # Imprime {"maçã", "banana", "laranja", "pera"}
+# adiciona o valor no slot [1]
+print(frutas)
 
 frutas.remove("banana")
-print(frutas)  # Imprime {"maçã", "laranja", "pera"}
+# metodo pra remover valores do conjunto, caso o valor nao exista vai gerar um erro
+print(frutas)
 
 frutas.discard("uva")
-print(frutas)  # Imprime {"maçã", "laranja", "pera"}
+# outro metodo pra remover valores do conjunto, nese não vai retornar erro caso o valor não exista no conjunto
+print(frutas)
 
 frutas.clear()
-print(frutas)  # Imprime set()
+# limpa a variável
+print(frutas)
+print("métodos de conjuntos")
+print("-----------")
 
-'''As estruturas de dados em Python nos oferecem grande flexibilidade e potência para armazenar e
- manipular dados em nossos programas. As listas são úteis para coleções ordenadas e mutáveis, as tuplas para 
- coleções ordenadas e imutáveis, os dicionários para armazenar pares de chave valor e os conjuntos para coleções
-  não ordenadas de elementos únicos.'''
-
-
-def multiplicar(a, b):
-    return a * b
-print(multiplicar)
-
-
-resultado = multiplicar(5, 3) + multiplicar(2, 4)
+print("fim da parte 1")
