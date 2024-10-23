@@ -1,11 +1,5 @@
-def somar_3(x):
-    return x + 3
+import random
 
 
-
-somar_3(5)
-
-
-
-
-
+numero_aleatorio = random.randint(10)
+print(numero_aleatorio)  # Imprime um número inteiro aleatório entre 1 e 10
