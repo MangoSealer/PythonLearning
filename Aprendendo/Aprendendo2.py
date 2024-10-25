@@ -1,5 +1,4 @@
 # funções
-from socket import SocketIO
 
 
 # resumidamente, é um bloco de código que age como um macro
@@ -185,9 +184,29 @@ print("-----------")
 
 import datetime
 
-
-
-
 data_atual = datetime.datetime.now()
 print(data_atual)  # Imprime a data e hora atual
+print("importando modulo datetime e imprimindo data e hora atual")
+print("-----------")
+
+
+
+# criando aquivo de modulo
+
+from Módulos import meu_modulo
+
+# modulo que eu criei
+
+meu_modulo.saudar("Danilo")
+# função saudar
+
+resultado = meu_modulo.calcular_soma(5, 3)
+# criando variavel resultado com a função calcular_soma
+print(resultado)
+print("Criando modulo.py e usando as funções criadas")
+print("-----------")
+
+
+
+
 

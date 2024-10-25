@@ -121,11 +121,10 @@ print("-----------")
 
 # Sintaxe = lista.metodo
 
-frutas = ["maçã", "banana", "laranja"]
+frutas = ['maçã', "banana", "laranja", "pera"]
 # primeira variavel criada
 
 
-frutas.append("pera")
 print(frutas)
 # |.append| adiciona um elemento ao final da lista
 print("método .append")
@@ -282,6 +281,7 @@ print("-----------")
 
 # métodos de conjuntos
 
+# noinspection PyRedeclaration
 frutas = {"maçã", "banana", "laranja"}
 # conjunto setado
 
