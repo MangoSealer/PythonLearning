@@ -3,8 +3,9 @@ print("-----------")
 
 idade1 = 25
 print(idade1)
-# no geral, não é necessário uso de ;
-print("idade")
+# no geral, não é necessário uso de ;, não é necessário definir o tipo de dados da variável
+# somente em casos especiais, no geral, python decide sozinho
+print("primeira variavel criada e idade")
 print("-----------")
 
 nome = "ugly bastard"
@@ -48,7 +49,7 @@ for fruta in frutas:
     print(fruta)
     # loop, |for fruta| cria a variável fruta, |in| executa o loop com a
     # variavel criada na primeira linha, executando cada valor da variável em uma linha
-print("teste loop for e in c/ frutas")
+print("teste loop |for e in| c/ frutas")
 print("-----------")
 
 contador = 0
@@ -62,7 +63,7 @@ while contador <= 5:
 print("teste loop while c/ contador += 1")
 print("-----------")
 
-for numero in range(1, 6):
+for numero in range(6):
     print(numero * 2)
     # |for| cria a variavel número, |in| cria o loop e |range| seta o intervalo em que essa conta vai ser feita
     # no caso, como é um loop cada vez a conta vai ser feita, assumindo um valor dentro do range e fazer a conta * 2,
@@ -84,7 +85,7 @@ while True:
 # print sem ""
 # |contador += 1| vai adicionar 1 a contagem a cada print do loop
 # if contador == (= declarar == comparar) 5
-# break pra parar o while True, que seria infinito
+# break em conjunto com o if acima pra parar o while True, que seria infinito
 print("teste loop indefinido 'while True' c/ break")
 print("-----------")
 
@@ -111,7 +112,7 @@ print("teste pass")
 print("-----------")
 
 frutas = ["maçã", "banana", "laranja"]
-# [ cria uma variavel tipo lista (?) podendo ser acessada posteriormente
+# [ cria uma lista podendo ser acessada posteriormente
 print(frutas[0])
 # print (frutas) acessa a lista, [0] acessa o primeiro item da lista, no caso, maçã
 print(frutas[-1])
@@ -122,7 +123,7 @@ print("-----------")
 # Sintaxe = lista.metodo
 
 frutas = ['maçã', "banana", "laranja", "pera"]
-# primeira variavel criada
+# lista
 
 
 print(frutas)
