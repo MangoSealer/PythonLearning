@@ -1,5 +1,15 @@
+import string
+import time
 import random
 
-
-numero_aleatorio = random.randint(10)
-print(numero_aleatorio)  # Imprime um número inteiro aleatório entre 1 e 10
+target = "Hello World"
+letters = string.ascii_letters + " "
+result = ""
+for letter in target:
+    while True:
+        i = random.choice(letters)
+        print(result + i)
+        if i == letter:
+            result += i
+            break
+    time.sleep(0.1)
