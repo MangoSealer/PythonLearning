@@ -181,6 +181,7 @@ quadrados = [x ** 2 for x in numeros if x % 2 == 0]
 # é igual a exponenciação normal (2 ** 3 = {2 x 2 x 2 = 8}),
 # logo em seguida um loop tá sendo criado |for x (variavel sendo criada, usando a condição mencionada antes)|
 # |in numeros| ta utilizando a lista mencionada acima, |if x % 2 == 0| tá testando se o numero é par
+# resumindo essa condição, vai elevar a segunda potência se o numero for par
 print(quadrados)
 print("lista de compreensão")
 print("-----------")
@@ -282,7 +283,6 @@ print("-----------")
 
 # métodos de conjuntos
 
-# noinspection PyRedeclaration
 frutas = {"maçã", "banana", "laranja"}
 # conjunto setado
 
@@ -299,7 +299,7 @@ frutas.discard("uva")
 print(frutas)
 
 frutas.clear()
-# limpa a variável
+# limpa o conjunto
 print(frutas)
 print("métodos de conjuntos")
 print("-----------")

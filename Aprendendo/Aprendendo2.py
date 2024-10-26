@@ -32,7 +32,7 @@ print("-----------")
 
 
 def soma(a, b):
-    # criando a função soma, dizendo que o que dá pra ser usado nela é valor A e B
+    # criando a função soma, dizendo que o que vai ser usado nela é o valor A e B, ou X e Y, etc
     return a + b
     # dizendo o que a função vai fazer
 
@@ -135,7 +135,7 @@ def soma_variavel(*numeros):
     for numero in numeros:
         # loopzinho padrão
         total += numero
-        # nesse loop o total, que começa em 0 nesse caso, vai ser somado a cada numero utilizado como argumento
+        # cada numero utilizado como argumento (?) vai ser somado e sair no print
     return total
 
 
@@ -145,35 +145,10 @@ print("função com numero variado de argumentos e loop simples for/in")
 print("-----------")
 
 
-# função input
-# essa função solicita informações pro usuário durante a execução do programa
 
-nome = input("Insira seu nome: ")
-# variavel = função input("Texto a ser exibido durante a solicitação do dado")
-idade = input("Insira sua idade: ")
-
-print("Olá, " + nome + "!")
-# + nome + vai puxar o que você retornar ao sistema anteriormente
-print("Você tem " + idade + " anos.")
-print("função input")
-print("-----------")
-
-
-# por padrão, input sempre retorna str, se quiser usar int ou float precisa converter
-
-idade = int(input("Insira sua idade: "))
-# convertendo str pra int pra manipular a idade na estrutura condicional abaixo
-
-if idade >= 18:
-    print("Você é maior de idade.")
-else:
-    print("Você é menor de idade")
-
-print("estrutura condicional c/ input")
-print("-----------")
 
 import math
-# importando um módulo (tipo macro ou script) especifico de python
+# importando um módulo (tipo macro ou script) pré existente
 
 
 resultado = math.sqrt(25)
@@ -193,9 +168,10 @@ print("-----------")
 
 # criando aquivo de modulo
 
-from Módulos import meu_modulo
+from Módulos import SaudacaoeSoma
 
 # modulo que eu criei
+# from Módulos pq não ta no mesmo diretório
 
 meu_modulo.saudar("Danilo")
 # função saudar
